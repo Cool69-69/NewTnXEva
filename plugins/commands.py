@@ -45,10 +45,10 @@ async def start(client, message):
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
+            InlineKeyboardButton('Main Channel⚡', url='https://t.me/TVSeriesCW')
             ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('Series Group✨', url='https://t.me/cw_tv_series'),
+            InlineKeyboardButton('Movies Group✨', url='https://t.me/heavenofmovies')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -67,7 +67,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🤖 Join Updates Channel", url=invite_link.invite_link
+                    "🤖 Must Join Main Channel", url=invite_link.invite_link
                 )
             ]
         ]
@@ -88,10 +88,10 @@ async def start(client, message):
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
+            InlineKeyboardButton('Main Channel⚡', url='https://t.me/TVSeriesCW')
             ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('Series Group✨', url='https://t.me/cw_tv_series'),
+            InlineKeyboardButton('Movies Group✨', url='https://t.me/heavenofmovies')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
