@@ -135,7 +135,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('**This Movie Is Not Available In Public Group❌, \nIf It Is Released In Digital Platform, You Will Get It In @TVSERIESCW_VIP 🌟**')
+            k = await query.message.edit('**This Movie Is Not Available In Public Group❌, \nIf It Is Released In Digital Platform, You Will Get It In [VIP Group🌟](https://t.me/MrperfectOffcial/39)**')
             await asyncio.sleep(10)
             await k.delete()
 
