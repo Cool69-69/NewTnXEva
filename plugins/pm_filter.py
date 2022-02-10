@@ -41,7 +41,7 @@ async def give_filter(client, message):
 async def next_page(bot, query):
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
-        return await query.answer("**Babe❤️ Don't Tap Others Request \nRequest On Your Own**", show_alert=True)
+        return await query.answer("Babe❤️, Don't Tap Others Request \nRequest On Your Own", show_alert=True)
     try:
         offset = int(offset)
     except:
@@ -135,7 +135,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('**This Movie Is Not Available In Public Group❌, \nIf It Is Released In Digital Platform, You Will Get It In __VIP Group__ 🌟**')
+            k = await query.message.edit('**This Movie Is Not Available In Public Group❌, \nIf It Is Released In Digital Platform, You Will Get It In VIP Group 🌟**')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -803,7 +803,7 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("__**Babe❤️ I couldn't find anything related to that\nDid you mean any one of these**__?",
+    await msg.reply("__**Babe❤️, I couldn't find anything related to that\nDid you mean any one of these**__?",
                     reply_markup=InlineKeyboardMarkup(btn))
 
 
