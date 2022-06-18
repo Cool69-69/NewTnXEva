@@ -744,13 +744,21 @@ async def auto_filter(client, msg, spoll=False):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
             await message.reply_photo(photo=poster, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
-        except Exception as e:
+        await asyncio.sleep(300)
+            await hmm.delete()
+            await message.delete()
+except Exception as e:
             logger.exception(e)
             await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
-    else:
+   await asyncio.sleep(300)
+            await fek.delete()
+            await msg.delete()
+ else:
         await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+    await asyncio.sleep(300)
+        await fuk.edit(f"\n \n⚙️ {message.from_user.mention}'s Result For **{search}**  Closed ️")
     if spoll:
-        await msg.message.delete()
+        await msg.message.edit(f"\n \n⚙️ Result  Closed ")
 
 
 async def advantage_spell_chok(msg):
