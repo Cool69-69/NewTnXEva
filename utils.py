@@ -386,8 +386,8 @@ async def get_shortlink(link):
     if "http" == https:
         https = "https"
         link = link.replace("http", https)
-    url = f'https://shorturllink.in/api'
-    params = {'api': 'c301a1f9a934ebea83dd1d9381251af6e5472c18',
+    url = f'https://pdiskshortener.com/api'
+    params = {'api': '2dfbbd4cfabdebcb14295d59e561c133c3426c32',
               'url': link,
               }
 
