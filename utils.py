@@ -386,7 +386,7 @@ async def get_shortlink(link):
     if "http" == https:
         https = "https"
         link = link.replace("http", https)
-    url = f'https://api.shareus.in/directLink'
+    url = f'https://api.shareus.in/shortlink'
     params = {'api': 'bv2WcmxzpKa86diNA6dAEEVbxxp1',
               'url': link,
               }
@@ -395,6 +395,6 @@ async def get_shortlink(link):
         async with session.get(url, params=params, raise_for_status=True, ssl=False) as response:
             data = await response.json()
             if data["status"] == "success":
-                return data['shortenedUrl']
+                return data['shortlink']
             else:
                 return f"Error: {data['message']}"
