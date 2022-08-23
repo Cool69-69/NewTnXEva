@@ -97,7 +97,7 @@ async def next_page(bot, query):
     # How to Download button
 
     btn.append(
-    [InlineKeyboardButton("𐋏᧐ᥕ T᧐ 𑀥᧐ᥕᥒᥣ᧐ᥲd 🤔", url="https://t.me/MrperfectOffcial/123"),]
+    [InlineKeyboardButton("𐋏᧐ᥕ T᧐ 𑀥᧐ᥕᥒᥣ᧐ᥲd 🤔", url="https://t.me/MrperfectOffcial/130"),]
 )
 
     if n_offset == 0:
@@ -682,7 +682,7 @@ async def auto_filter(client, msg, spoll=False):
         ]
 
     btn.append(
-    [InlineKeyboardButton("𐋏᧐ᥕ T᧐ 𑀥᧐ᥕᥒᥣ᧐ᥲd 🤔", url="https://t.me/MrperfectOffcial/123"),]
+    [InlineKeyboardButton("𐋏᧐ᥕ T᧐ 𑀥᧐ᥕᥒᥣ᧐ᥲd 🤔", url="https://t.me/MrperfectOffcial/130"),]
 )
 
     if offset != "":
