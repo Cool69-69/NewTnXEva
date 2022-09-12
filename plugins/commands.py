@@ -44,11 +44,10 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ Add Me To Your Groups (>50 Members) ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('Main Channel⚡', url='https://t.me/TVSeriesCW')
+            InlineKeyboardButton('Main Channel⚡', url='https://t.me/HeavenForYouAll')
             ],[
-            InlineKeyboardButton('Series Group✨', url='https://t.me/cw_tv_series'),
-            InlineKeyboardButton('Movies Group✨', url='https://t.me/heavenofmovies')
+            InlineKeyboardButton('Search Here➡️', url='https://t.me/HeavenRequest'),
+            InlineKeyboardButton('Best Reviews❣️', url='https://t.me/heavenmediaco')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -90,11 +89,10 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ Add Me To Your Groups (>50 Members)➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('Main Channel⚡', url='https://t.me/TVSeriesCW')
+            InlineKeyboardButton('Main Channel⚡', url='https://t.me/HeavenForYouAll')
             ],[
-            InlineKeyboardButton('Series Group✨', url='https://t.me/cw_tv_series'),
-            InlineKeyboardButton('Movies Group✨', url='https://t.me/heavenofmovies')
+            InlineKeyboardButton('Search Here➡️', url='https://t.me/HeavenRequest'),
+            InlineKeyboardButton('Best Reviews❣️', url='https://t.me/heavenmediaco')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
